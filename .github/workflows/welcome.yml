@@ -13,3 +13,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
+      - run: echo "Nice work, $First_Name. Deploying to production server on branch $GITHUB_REF"
+        env:
+          First_Name: Christopher    
